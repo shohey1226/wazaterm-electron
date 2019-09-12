@@ -23,8 +23,7 @@ nativefier --name "Wazaterm" "https://www.wazaterm.com" --platform linux
 cd Wazaterm-darwin-x64
 zip -r -y Wazaterm.app.zip Wazaterm.app
 
-cd Wazaterm-win32-x64
-zip -r -y Wazaterm.exe.zip Wazaterm.exe
+zip -r -y Wazaterm-win32-x64.zip Wazaterm-win32-x64
 
 cd wazaterm-linux-x64 
 tar cvf wazaterm.tar wazaterm 
@@ -38,7 +37,7 @@ $ brew install git-lfs
 $ cd electron-wazaterm
 $ git lfs install
 $ git lfs track Wazaterm-darwin-x64/Wazaterm.app.zip 
-$ git lfs track Wazaterm-win32-x64/Wazaterm.exe.zip 
+$ git lfs track Wazaterm-win32-x64.zip
 $ git lfs track wazaterm-linux-x64/wazaterm.tar.gz 
 $ git add .gitattributes
 ```
